@@ -1,0 +1,14 @@
+
+CREATE DATABASE cadpreso
+   
+
+
+create table preso(
+  id serial,
+  nome varchar(255) not null,
+  sobrenome varchar(255) not null,
+  idade varchar(100) not null,
+  crime varchar(255) not null,
+  pena varchar(255) not null,
+  primary key(id)
+)

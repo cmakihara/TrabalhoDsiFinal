@@ -1,0 +1,42 @@
+body{
+
+	background-color: GRAY;
+	line-height:1.5;
+}
+footer{
+	background-color:black;
+	color:#F2FFFC;
+  text-align: right;
+
+}
+
+aside{
+
+	color:#F2FFFC;
+	background-color:#3C1D3D;
+	text-align: left;
+  font-size: 20px;
+
+}
+
+h1{
+	font-size:60px;
+	background-color:#060809;
+	color: #FFF;
+	text-align:center;
+	font-family:"Arial";
+	padding: 25px;
+	margin:0px;
+	border-bottom: 10px solid black;
+}
+button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+		font-size: 24px;
+
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}

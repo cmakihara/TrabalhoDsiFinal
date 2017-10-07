@@ -1,0 +1,67 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<body>
+  <div style="text-align:center">
+    <h1>
+          Bem vindo a prisão
+    </h1>
+    <img width="600" src="https://bladenonline.com/wp-content/uploads/2015/04/Jail.jpg">
+  </div>
+
+
+  <button type="button" class="btn btn-primary" (click)="openModal(tempCad)">Cadastrar</button>
+
+  <ng-template #tempCad>
+    <div class="modal-header" >
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+
+      </button>
+    </div>
+    <div class="modal-body">
+      <app-cadastrar></app-cadastrar>
+    </div>
+  </ng-template>
+
+
+
+
+  <button type="button" class="btn btn-info" (click)="openModal(tempList)">Consultar</button>
+
+  <ng-template #tempList>
+    <div class="modal-header">
+      <button type="button"  class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+
+      </button>
+    </div>
+    <div class="modal-body">
+      <app-consultar></app-consultar>
+    </div>
+</ng-template>
+
+<button type="button" class="btn btn-danger" (click)="openModal(tempDel)">Deletar</button>
+
+<ng-template #tempDel>
+  <div class="modal-header">
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+
+    </button>
+  </div>
+  <div class="modal-body">
+    <app-deletar></app-deletar>
+  </div>
+</ng-template>
+
+  <aside>
+    <nav>
+      <ul>
+        <p>  Sistema Prisional versão 1.0 </p>
+
+      </ul>
+    </nav>
+  </aside>
+
+  <footer>
+    &copy; Claudio Makihara
+  </footer>
+
+</body>

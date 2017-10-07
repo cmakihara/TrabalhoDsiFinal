@@ -1,0 +1,53 @@
+<form class="form-horizontal" method="post" action="http://localhost:3000/app/cadpreso" (ngSubmit)="onSubmit()">
+  <fieldset>
+    <h4 class="modal-title" >
+        Cadastro de presidiario
+    </h4>
+
+    <div class="form-group">
+      <label class="control-label col-md-4 col-sm-4" for="nome">Nome</label>
+      <div class="col-md-8 col-sm-8">
+        <input name="nome" type="text" placeholder="Ex: Lula" class="form-control input-md" required="">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label class="control-label col-md-4 col-sm-4" for="sobrenome">Sobrenome</label>
+      <div class="col-md-8 col-sm-8">
+        <input  name="sobrenome" type="text" placeholder="Ex: PT" class="form-control input-md" required="">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-md-4 col-sm-4" for="idade">Idade</label>
+      <div class="col-md-8 col-sm-8">
+        <input  name="idade" type="text" placeholder="Ex: 171" class="form-control input-md" required="">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-md-4 col-sm-4" for="crime">Crime</label>
+      <div class="col-md-8 col-sm-8">
+        <input name="crime" type="text" placeholder="Ex: Não sabia de nada" class="form-control input-md" required="">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-md-4 col-sm-4" for="pena">Pena</label>
+      <div class="col-md-8 col-sm-8">
+        <input  name="pena" type="text" placeholder="Ex: 288" class="form-control input-md" required="">
+      </div>
+    </div>
+
+
+
+    <div class="form-group">
+      <label class="control-label col-md-8 " for="enviar"></label>
+      <div class="col-md-8 col-sm-8">
+        <button  type="enviar" name="enviar" class="form-control input-md" class="btn btn-success">Cadastrar</button>
+       </div>
+    </div>
+
+  </fieldset>
+</form>

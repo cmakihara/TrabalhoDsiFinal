@@ -8,7 +8,7 @@ const client = new pg.Client({
   port: 5432,
   database: 'cadpreso',
   user: 'postgres',
-  password: 'sa'
+  password: 'univel'
 });
 
 client.connect();
